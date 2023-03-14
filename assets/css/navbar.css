@@ -13,9 +13,7 @@
     padding-right: 0rem!important;
     padding-left: 0rem!important;
 }
-ol, ul {
-  padding-left: 1rem;
-}
+
 .navbar-nav-two{
   padding-right: 0rem!important;
   padding-left: 0rem!important;
@@ -24,46 +22,52 @@ ol, ul {
     flex-direction: inline;
 }
   .navbar {
+    position: relative;
     font-size: 18px;
-    top: 0px;
-    margin-bottom: 12px;
-    padding-bottom: 36px;
-    padding-left:0rem!important;
+    top: 16px;
+    padding: 0rem 0rem 4rem 0rem!important;
+    margin: 0px 0px 0px 0px;
     
   }
   li.nav-item{
     list-style-type: none;
   }
-  .nav-link,
+  
   .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
   }
 
+  .nav-link{
+    text-decoration: none;
+    color: hsl(180, 2%, 78%);
+  }
   .nav-items li {
-    flex-wrap: nowrap !important;
-    margin: 0.5rem auto;
-    padding: 0.3rem;
+   /* flex-wrap: nowrap !important;*/
+    margin: 0.3rem auto;
+    padding: 0.2rem;
   }
   
   .nav-items{ 
     width: 100%;
     border: 0.05rem solid rgba(10, 11, 19, 0.2);
     background-image: linear-gradient(0deg, #272829 0%, #2b2b2d 1%);
-	margin-top: 40px;
-	padding-bottom: 20px;
+    margin-top: 47px;
+    padding-bottom: 39px;
+    padding-left: 0px;
+    margin-bottom: -30px;
   }
 
   .logo {
 	position: absolute;
     display: inline-block;
     font-size: 22px;
-	margin: 10px 20px 0px 10px;
+    margin: 12px 0px 0px 0px;
   }
   
   .nav-toggle {
     position: absolute;
-    top: 0px;
+    top: -8px;
     right: 10px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
@@ -72,7 +76,7 @@ ol, ul {
       /*Start Navbar menu 2v */
   .v2-toggle {
     position: absolute;
-    top: 0px;
+    top: -8px;
     right: 10px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
@@ -84,15 +88,14 @@ ol, ul {
   }
   a.nav-link {
     width: 100%;
-    color: hsl(180, 2%, 78%);
     text-decoration: none;
     font-family: Comfortaa;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 0.1rem;
-    word-spacing: -0.15rem;
-    line-height: 70%;
+    word-spacing: -0.1499999999999999rem;
+    line-height: 150%;
     font-size: 1.2rem;
-    padding: 9px;
+    padding: 5px;
 }
 li.nav-item a.nav-link:hover {
     color: rgba(226, 222, 241, 0.722);
@@ -111,11 +114,13 @@ li.nav-item a.nav-link:visited   {
         margin: 0px;
     }
     .navbar {
+    top: 0px;
+    padding: 0rem 0rem 0rem 4rem!important;
     justify-content: space-between;
     padding-bottom: 0;
     border: 0rem solid transparent;
     background-image: none;
-      }
+    }
     .nav-items {
       display: inline-flex;
       flex-direction: row;
